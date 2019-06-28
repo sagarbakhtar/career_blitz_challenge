@@ -1,10 +1,12 @@
 from flask import Flask, render_template
+from flask_cors import CORS
 from update_job_listings import update_job_listings
 from api import api_bp
 
 update_job_listings()
 
-app = Flask(__name__, static_folder = '../build/static', template_folder = '../build')
+app = Flask(__name__, static_folder = 'build/static', template_folder = 'build')
+CORS(app)
 app.register_blueprint(api_bp, url_prefix = '/api')
 
 @app.route('/')
