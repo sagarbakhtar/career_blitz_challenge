@@ -8,3 +8,10 @@ export const getCompanies = () => {
             return response;
         });
 }
+
+export const getJobListings = (company_slug) => {
+    return axios(`${API_URL}/api/job_listing/${company_slug}`)
+        .then( response => {
+            return response;
+        });
+}

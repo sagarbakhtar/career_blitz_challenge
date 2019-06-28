@@ -53,6 +53,7 @@ def update_yext_listings():
         
 
 def update_job_listings():
+    print('update')
     switcher = {
         'twilio': update_twilio_listings,
         'airbnb': update_airbnb_listings,
