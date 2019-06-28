@@ -1,5 +1,6 @@
 from flask import jsonify, Blueprint
 from companies import companies, job_listings
+
 api_bp = Blueprint('api', __name__)
 
 @api_bp.route('/companies/', methods=['GET'])

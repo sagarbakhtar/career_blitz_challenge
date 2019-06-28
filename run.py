@@ -1,7 +1,10 @@
 from flask import Flask, render_template
+from update_job_listings import update_job_listings
 from api import api_bp
 
-app = Flask(__name__, static_folder = 'build/static', template_folder = 'build')
+update_job_listings()
+
+app = Flask(__name__, static_folder = '../build/static', template_folder = '../build')
 app.register_blueprint(api_bp, url_prefix = '/api')
 
 @app.route('/')

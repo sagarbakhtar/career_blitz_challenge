@@ -13,8 +13,7 @@ job_listings = {
 }
 """
 
-job_listings = {
-    'twilio': [
-        {'position_title': 'Senior Accountant', 'location': 'Bogotá, Colombia', 'listing_original_url': 'https://boards.greenhouse.io/twilio/jobs/1638101'},
-    ]
-}
+job_listings = {}
+
+def update_jobs(company_slug, listings):
+    job_listings[company_slug] = listings
