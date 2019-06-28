@@ -19,3 +19,5 @@ Commands to run project
 export FLASK_app=run.py
 python3 run.py
 ```
+
+[![Watch the video](https://i.imgur.com/lm3urll.png)](https://www.loom.com/share/e2e76b2a50fd4172a41f7a91b5e48cde)
