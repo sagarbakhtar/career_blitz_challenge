@@ -1,5 +1,5 @@
 import requests
-from companies import companies, update_jobs
+from .companies import companies, update_jobs
 
 def update_twilio_listings():
     job_listings = []
